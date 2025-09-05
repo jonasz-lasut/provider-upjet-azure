@@ -12,6 +12,9 @@ metadata:
   name: exmplemanagidentity
   namespace: upbound-system
 spec:
+  writeConnectionSecretToRef:
+    namespace: upbound-system
+    name: examplemanagedidentity
   forProvider:
     location: West Europe
     name: exmplemanagidentity
