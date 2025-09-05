@@ -40,9 +40,6 @@ type UserAssignedIdentityInitParameters struct {
 
 type UserAssignedIdentityObservation struct {
 
-	// The ID of the app associated with the Identity.
-	ClientID *string `json:"clientId,omitempty" tf:"client_id,omitempty"`
-
 	// The ID of the User Assigned Identity.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
@@ -51,9 +48,6 @@ type UserAssignedIdentityObservation struct {
 
 	// Specifies the name of this User Assigned Identity. Changing this forces a new User Assigned Identity to be created.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
-
-	// The ID of the Service Principal object associated with the created Identity.
-	PrincipalID *string `json:"principalId,omitempty" tf:"principal_id,omitempty"`
 
 	// Specifies the name of the Resource Group within which this User Assigned Identity should exist. Changing this forces a new User Assigned Identity to be created.
 	ResourceGroupName *string `json:"resourceGroupName,omitempty" tf:"resource_group_name,omitempty"`

@@ -32,6 +32,7 @@ import (
 	"github.com/upbound/provider-azure/config/cluster/insights"
 	"github.com/upbound/provider-azure/config/cluster/keyvault"
 	"github.com/upbound/provider-azure/config/cluster/kusto"
+	"github.com/upbound/provider-azure/config/cluster/managedidentity"
 	"github.com/upbound/provider-azure/config/cluster/management"
 	"github.com/upbound/provider-azure/config/cluster/netapp"
 	"github.com/upbound/provider-azure/config/cluster/network"
@@ -100,4 +101,5 @@ func init() {
 	ProviderConfiguration.AddConfig(certificateregistration.Configure)
 	ProviderConfiguration.AddConfig(orbital.Configure)
 	ProviderConfiguration.AddConfig(appplatform.Configure)
+	ProviderConfiguration.AddConfig(managedidentity.Configure)
 }

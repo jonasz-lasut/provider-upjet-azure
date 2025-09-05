@@ -21,7 +21,7 @@ func (mg *UserAssignedIdentity) GetTerraformResourceType() string {
 
 // GetConnectionDetailsMapping for this UserAssignedIdentity
 func (tr *UserAssignedIdentity) GetConnectionDetailsMapping() map[string]string {
-	return nil
+	return map[string]string{"client_id": "status.atProvider.clientId", "principal_id": "status.atProvider.principalId"}
 }
 
 // GetObservation of this UserAssignedIdentity

@@ -353,9 +353,6 @@ spec:
             properties:
               atProvider:
                 properties:
-                  clientId:
-                    description: The ID of the app associated with the Identity.
-                    type: string
                   id:
                     description: The ID of the User Assigned Identity.
                     type: string
@@ -367,10 +364,6 @@ spec:
                   name:
                     description: Specifies the name of this User Assigned Identity.
                       Changing this forces a new User Assigned Identity to be created.
-                    type: string
-                  principalId:
-                    description: The ID of the Service Principal object associated
-                      with the created Identity.
                     type: string
                   resourceGroupName:
                     description: Specifies the name of the Resource Group within which
